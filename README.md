@@ -1,4 +1,4 @@
-# 🗿 SigmaSlackBot
+# SigmaSlackBot
 
 A Python-powered Slack bot built by **HostApple** — this adds fun memes , friendly roasts and quotes to your workspace.
 
@@ -34,7 +34,7 @@ A Python-powered Slack bot built by **HostApple** — this adds fun memes , frie
 | `/sigma-task list` | List saved tasks |
 | `/sigma-task done <ID>` | Mark a task as completed |
 
-## 👨‍💻 Author
+
 
 **HostApple**
 
