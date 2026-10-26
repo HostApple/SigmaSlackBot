@@ -4,9 +4,9 @@ A Python-powered Slack bot built by **HostApple** — this adds fun memes , frie
 
 ##  Features
 
--  **Sigma Quotes** — Get a random sigma-style quote.
+-  **Sigma Quotes** — Get a random sigma-style quote. ( I used ai to get these quotes )
 -  **Meme Generator** — Fetch memes using the API League API.
--  **Roast Command** — Get a random roast.
+-  **Roast Command** — Get a random roast.( I used Ai to get these commands )
 -  **Task Manager** — Add, list, and complete tasks.
 -  **Help Command** — View available commands.
 -  **Slack Socket Mode** — Connects to Slack without requiring a public webhook URL.
