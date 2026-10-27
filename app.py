@@ -4,7 +4,7 @@ import sqlite3
 from pathlib import Path
 import requests
 from slack_bolt import App
-from slack_bolt.adapter.socket_mode import SocketModeHandler
+from slack_bolt.adapter.socket_mode import SocketModeHandler  # why do they have yellow lines under them in vs code TwT
 
 # tokens n stuff
 SLACK_BOT_TOKEN = os.environ["SLACK_BOT_TOKEN"]
@@ -25,9 +25,18 @@ QUOTES = [
     "Move in silence. Submit the assignment loudly.",
     "One small task today is better than a 47-tab productivity setup.",
     "Stay mysterious. Finish your homework before midnight.",
-    "Sigma Simga boy yay.",
-    "THE LARP MUST NEVER STOP",
-    "LARP LARP LARP SAHURRR .",
+    # human written quotes (these suck sorry)
+    "Sigma Simga boy yay. DO SOMETHING NOW",
+    "THE LARP MUST NEVER STOP , jk",
+    "LARP LARP LARP SAHURRR didnt waste time btw",
+    "YOU START NOW AND BECOME SUCCESSFUL rather than using this silly slackbot",
+    "DO NOT ENTER INSTAGRAM REELS OR TIKTOKS NOW . BECOME PRODUCTIVE AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
+    "Those rich clippers you see online did not play around with silly bots like me , they worked . SO GO WORK ! ! !",
+    "money is time or something idk just go work now so you know whats going on",
+    "man, if I studied rather that doing the thing you are doing i would've been the richest person in the world",
+    "DO SOMETHING PRODUCTIVE ELSE I WILL EAT YOU *nom nom nom*",
+
+
 ]
 
 
@@ -43,6 +52,15 @@ ROASTS = [
     "Your cooking skills start and end with water boiling—and even then, I get nervous.",
     "If being late were an Olympic sport, you’d still manage to show up ten minutes after the ceremony ended.",
     "You own five versions of the exact same shirt 🗿  and somehow act like shopping is a crisis.",
+
+    # Human (me) written roasts from here
+
+    "You have slack not to slack around but to be productive bruv", 
+    "You should really start doing something productive or else you're gonna become TRIPLE T ",
+    "Are you actually human ? because a human would be more productive than using a silly slackbot",
+    "you really wanted to get roasted lol",
+    "WOAHH A HUMAN!!! IT USED BE RATHER THAN DOING SOMETHING PRODUCTIVE WOAHHHH",
+    "wait wait whats going on here . another doomscroller using me xDD",
 
 ]
 
@@ -125,7 +143,7 @@ def get_random_meme(words=""):
 @app.command("/sigma-quote")
 def sigma_quote(ack, respond):
     ack()
-    respond(f"🗿 *Sigma wisdom of the moment:*\n>{random.choice(QUOTES)}")
+    respond(f"🗿 *Sigma wisdom of the moment:*\n>{random.choice(QUOTES)}") 
 
 
 # friendly bullying
@@ -165,7 +183,7 @@ def sigma_task(ack, body, respond):
 
     if action == "add" and rest.strip():
         task_id = add_task(team_id, user_id, rest.strip())
-        respond(f"📝 Added task *#{task_id}*: {rest.strip()}")
+        respond(f"you task has been added . NOW WORK  *#{task_id}*: {rest.strip()}")
 
     elif action == "list":
         tasks = get_tasks(team_id, user_id)
@@ -191,14 +209,14 @@ def sigma_task(ack, body, respond):
 
     else:
         respond(
-            "use one of these lol:\n"
+            "GO WORK NOW OR USE THESE TO REMEMBER:\n"
             "• `/sigma-task add finish my project`\n"
             "• `/sigma-task list`\n"
             "• `/sigma-task done 1`"
         )
 
 
-#meme time
+#meme time ( i dont know about api running out so lets hope that doesnt happen :3)
 @app.command("/sigma-meme")
 def sigma_meme(ack, body, respond):
     ack() 
@@ -225,12 +243,12 @@ def sigma_meme(ack, body, respond):
         respond("meme api isnt working rn mb gng")
 
     except (ValueError , KeyError , TypeError):
-        respond("couldn't read the meme 🗿 response 💀")
+        respond("couldn't read the meme 🗿 because im different")
 
 
 
 
-#when someone mentiones the bot
+#when someone mentiones the bot it replies
 
 @app.event("app_mention")
 def mention_bot(event, say):
