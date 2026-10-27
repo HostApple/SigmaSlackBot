@@ -36,6 +36,12 @@ A Python-powered Slack bot built by **HostApple** — this adds fun memes , frie
 
 
 
+## AI Disclosure 
+--------------------------------------------------------------------------------------------------------------------------------------
+Some of the quotes and roasts are Ai generated because i didnt have ideas at that time . Im working on new quotes and roasts now 
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
 **HostApple**
 
 GitHub: [@HostApple](https://github.com/HostApple)
