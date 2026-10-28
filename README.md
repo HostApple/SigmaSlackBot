@@ -18,13 +18,13 @@ It was hosted on Nest Hackclub .
 
 ##  Commands
 
- `/sigma-help` | Show available commands |
- `/sigma-quote` | Get a random sigma quote |
- `/sigma-meme [keywords]` | Fetch a meme, optionally using keywords |
- `/sigma-roast` | Get a random roast |
- `/sigma-task add <task>` | Add a task |
- `/sigma-task list` | List saved tasks |
- `/sigma-task done <ID>` | Mark a task as completed |
+- `/sigma-help` | Show available commands |
+- `/sigma-quote` | Get a random sigma quote |
+- `/sigma-meme [keywords]` | Fetch a meme, optionally using keywords |
+- `/sigma-roast` | Get a random roast |
+- `/sigma-task add <task>` | Add a task |
+- `/sigma-task list` | List saved tasks |
+- `/sigma-task done <ID>` | Mark a task as completed |
 
 
 
