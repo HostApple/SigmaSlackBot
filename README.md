@@ -1,6 +1,6 @@
 # SigmaSlackBot
 
-A Python-powered Slack bot built by **HostApple** — this adds fun memes , friendly roasts and quotes to your workspace.
+A  Slack bot. this adds fun memes , friendly roasts and quotes to your workspace. I made this to complete the Hackclub Stardance mission . Since i knew some python basics and stuff before and made some other slack bots this didnt take me that much time . 
 
 ##  Features
 
@@ -9,30 +9,22 @@ A Python-powered Slack bot built by **HostApple** — this adds fun memes , frie
 -  **Roast Command** — Get a random roast.( I used Ai to get these commands )
 -  **Task Manager** — Add, list, and complete tasks.
 -  **Help Command** — View available commands.
--  **Slack Socket Mode** — Connects to Slack without requiring a public webhook URL.
--  **SQLite Storage** — Stores tasks locally.
+
+# Test it on Hackclub's server on Slack : https://app.slack.com/client/E09V59WQY1E/C0CCY8HHN7J
 
 ##  Tech Stack
-
-- Python
-- Slack Bolt for Python
-- Requests
-- SQLite
-- API League
-- Slack Socket Mode
-- Nest hackclub
+I used python ( mostly python ) , Slack api keys and API League Api key for memes . 
+It was hosted on Nest Hackclub .
 
 ##  Commands
 
-| Command | Description |
-|---|---|
-| `/sigma-help` | Show available commands |
-| `/sigma-quote` | Get a random sigma quote |
-| `/sigma-meme [keywords]` | Fetch a meme, optionally using keywords |
-| `/sigma-roast` | Get a random roast |
-| `/sigma-task add <task>` | Add a task |
-| `/sigma-task list` | List saved tasks |
-| `/sigma-task done <ID>` | Mark a task as completed |
+ `/sigma-help` | Show available commands |
+ `/sigma-quote` | Get a random sigma quote |
+ `/sigma-meme [keywords]` | Fetch a meme, optionally using keywords |
+ `/sigma-roast` | Get a random roast |
+ `/sigma-task add <task>` | Add a task |
+ `/sigma-task list` | List saved tasks |
+ `/sigma-task done <ID>` | Mark a task as completed |
 
 
 
